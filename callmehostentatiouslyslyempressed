@@ -1,0 +1,160 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "callmehostentatiouslyslyempressed", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+	Name = "The Mimic",
+	Icon = "rbxassetid://10482450274",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "KTollT"
+})
+
+Tab:AddButton({
+	Name = "KTollT",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/KTollT/KTollT/main/README.md'))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "KTollT Arceus X",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/KTollT/NewGUI/main/README.md'))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Limited",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/KTollT/Limited/main/README.md'))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Limited Two",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/KTollT/LimitedTwo/main/README.md'))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Lantern",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/KTollT/Lantern/main/README.md'))()
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "POOM HUB"
+})
+
+Tab:AddButton({
+	Name = "Fly",
+	Callback = function()
+      		https://raw.githubusercontent.com/hanakokunsenpai/poomhubfly/main/fly2.8
+  	end    
+})
+
+Tab:AddButton({
+	Name = "April Fools",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/poisklmpoikslms901i234/ScriptAutoFarmMimicPoomHubLimited/main/.Lua"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "The Mimic Book II",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/poisklmpoikslms901i234/ScriptTheMimicPoomHubBookIIFirst/main/.Lua"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Halloween Trials",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/poisklmpoikslms901i234/POOMHUBHalloweenScript/main/.Lua"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Revamp I",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/poisklmpoikslms901i234/TheMimicBook1RevampScript/main/.Lua"))()
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "XVAS"
+})
+
+Tab:AddButton({
+	Name = "Book I",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/XITHHUB/SCRIPT/main/README.md"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Book II",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/XITHHUB/TheMimic/main/README.md"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Jigoku",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/hanakokunsenpai/xvas/main/jigoku"))()
+  	end    
+})
+
+
+local Tab = Window:MakeTab({
+	Name = "Yokai",
+	Icon = "rbxassetid://10482450274",
+	PremiumOnly = false
+})
+
+local Tab = Window:MakeTab({
+	Name = "Others",
+	Icon = "rbxassetid://10482450274",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Infinite Yield",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Fullbright",
+	Callback = function()
+      		local Light = game:GetService("Lighting")
+
+function dofullbright()
+Light.Ambient = Color3.new(1, 1, 1)
+Light.ColorShift_Bottom = Color3.new(1, 1, 1)
+Light.ColorShift_Top = Color3.new(1, 1, 1)
+end
+
+dofullbright()
+
+Light.LightingChanged:Connect(dofullbright)
+  	end    
+})
+
+Tab:AddBind({
+	Name = "Bind",
+	Default = Enum.KeyCode.KeypadSeven,
+	Hold = false,
+	Callback = function()
+		print("press")
+	end    
+})
+
+
+OrionLib:Init()
